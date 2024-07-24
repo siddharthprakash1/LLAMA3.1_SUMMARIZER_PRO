@@ -17,7 +17,7 @@ def get_youtube_description(url: str):
     while True:
         letter = full_html[count]
         if letter == "\"":
-            if letter == "\\" and full_html[count - 1] == "\\":
+            if full_html[count - 1] == "\\":
                 desc += letter
                 count += 1
             else:
@@ -65,8 +65,8 @@ def get_transcription_summary(url: str, temperature: float, chunk_size: int, ove
         temperature=temperature,
     )
     chain = load_summarize_chain(llm, chain_type="map_reduce")
-    output = chain.invoke(split_docs)
-    return output['output_text']
+    output = chain.run(split_docs)
+    return output
 
 # Create the Gradio interface with custom CSS for styling
 with gr.Blocks(css=""" 
