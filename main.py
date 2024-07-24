@@ -1,4 +1,4 @@
-# %%
+#download ollma on your system and then install any llm of you own choice and use it in this 
 import pytube
 import requests
 import re
@@ -9,7 +9,6 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.llms import Ollama
 import tiktoken
 
-# %%
 def get_youtube_description(url: str):
     full_html = requests.get(url).text
     y = re.search(r'shortDescription":"', full_html)
@@ -63,7 +62,7 @@ def get_transcription_summary(url: str, temperature: float, chunk_size: int, ove
     text_splitter = get_text_splitter(chunk_size=chunk_size, overlap_size=overlap_size)
     split_docs = text_splitter.split_documents(docs)
     llm = Ollama(
-        model="llama3",
+        model="llama3",#change to llama3.1 while running on your system or to any other ollama model you want
         base_url="http://localhost:11434",
         temperature=temperature,
     )
@@ -71,11 +70,6 @@ def get_transcription_summary(url: str, temperature: float, chunk_size: int, ove
     output = chain.invoke(split_docs)
     return output['output_text']
 
-# # %%
-# try:
-#     demo.close()
-# except:
-#     pass
 
 with gr.Blocks(css="""
     body {
