@@ -12,6 +12,9 @@ Welcome to the LLAMA3.1_SUMMARIZER_PRO repository! This project leverages the po
 - 📊 Customizable chunk sizes for processing
 - 🔗 Overlap control for improved context
 
+![Sample Output](c.png)
+![Sample Output](c1.png)
+
 ## 🛠️ Installation
 
 1. Clone the repository:
