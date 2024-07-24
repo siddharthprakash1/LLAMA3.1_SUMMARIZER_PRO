@@ -1,29 +1,65 @@
 # 🚀 NexGen YouTube Insight Engine 🚀
 
-## Overview
+Welcome to the LLAMA3.1_SUMMARIZER_PRO repository! This project leverages the power of AI to provide deep insights into YouTube videos, offering transcription, summarization, and more.
 
-NexGen YouTube Insight Engine is a powerful tool designed to decode and analyze YouTube videos using AI. It extracts video information, transcripts, and generates AI-driven summaries to provide comprehensive insights into YouTube content.
+## 🌟 Features
 
-## Features
+- 🔗 Extract video information from YouTube URLs
+- 📝 Retrieve video descriptions
+- 📊 Generate transcripts with token count estimation
+- 🧠 AI-powered video summarization using LLAMA 3.1
+- 🌡️ Adjustable creativity settings for summarization
+- 📊 Customizable chunk sizes for processing
+- 🔗 Overlap control for improved context
 
-- **🔍 Extract Video Information**: Retrieve video title and description.
-- **📜 Transcript Extraction**: Obtain the full transcript of the video.
-- **🧠 AI-Powered Summary**: Generate a concise summary of the video using advanced language models.
-- **💡 User-Friendly Interface**: Intuitive design with easy-to-use controls.
+## 🛠️ Installation
 
-## Installation
+1. Clone the repository:
+   ```
+   git clone https://github.com/siddharthprakash1/LLAMA3.1_SUMMARIZER_PRO.git
+   ```
+2. Navigate to the project directory:
+   ```
+   cd LLAMA3.1_SUMMARIZER_PRO
+   ```
+3. Install the required dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
 
-Ensure you have the following dependencies installed:
+## 🚀 Usage
 
-- `pytube`
-- `requests`
-- `re`
-- `gradio`
-- `langchain`
-- `langchain_community`
-- `tiktoken`
+1. Ensure you have Ollama running locally with the LLAMA 3.1 model.
+2. Run the Gradio app:
+   ```
+   python app.py
+   ```
+3. Open the provided URL in your web browser.
+4. Enter a YouTube URL and explore the various features!
 
-You can install these using pip:
+## 🧩 Components
 
-```bash
-pip install pytube requests gradio langchain langchain_community tiktoken
+- `pytube`: YouTube video data extraction
+- `langchain`: Document processing and summarization
+- `gradio`: User interface creation
+- `tiktoken`: Token counting for GPT models
+- `Ollama`: Local AI model integration
+
+## 🎨 UI Features
+
+- 🌈 Gradient background for an engaging user experience
+- 💡 Hover effects for interactive elements
+- 🔠 Custom styling for inputs, buttons, and text areas
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/siddharthprakash1/LLAMA3.1_SUMMARIZER_PRO/issues).
+
+
+## 🙏 Acknowledgements
+
+- Thanks to the Meta AI team for the LLAMA 3.1 model
+- Gradio for the amazing UI framework
+- All the open-source libraries that made this project possible
+
+---
